@@ -1,5 +1,44 @@
+:root {
+	--yellow: hsl(47, 88%, 63%);
+	--white: hsl(0, 0%, 100%);
+	---gray-500: hsl(0, 0%, 42%)
+	--gray-950: hsl(0, 0%, 7%)
+}
+
 body {
-	background-color: hsl(233, 47%, 7%);
+	display: flex;
+	font-family: 'Figtree', Arial, Helvetica, sans-serif;
+	flex-direction: column;
+	align-items: center;
+	font-size: 16px;
+	background-color: var(--yellow);
+}
+
+.card{
+	background-color: var(--white);
+	padding: 24px;
+	width: 300px;
+	height: max-content;
+	min-width: 320px;
+	border-radius: 12px;
+	border: solid 1px ;
+	border-color: var(---gray-500);
+	/* max-width: 100%; */
+	box-sizing: border-box;
+}
+
+.card-img{
+	border-radius: 12px;
+	width: 100%;
+}
+
+.card section{
+	/* padding: 12px; */
+}
+
+.end-img {
+	width: 35px;
+	padding: 10px;
 }
 
 .attribution {
