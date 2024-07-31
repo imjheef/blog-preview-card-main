@@ -1,30 +1,49 @@
 :root {
 	--yellow: hsl(47, 88%, 63%);
 	--white: hsl(0, 0%, 100%);
-	---gray-500: hsl(0, 0%, 42%)
-	--gray-950: hsl(0, 0%, 7%)
+	---gray-500: hsl(0, 0%, 42%);
+	--gray-950: hsl(0, 0%, 7%);
 }
 
 body {
 	display: flex;
 	font-family: 'Figtree', Arial, Helvetica, sans-serif;
 	flex-direction: column;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 24px;
 	align-items: center;
 	font-size: 16px;
 	background-color: var(--yellow);
 }
 
+.tag{
+	background: var(--yellow);
+    padding: 6px 9px;
+    width: 65px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.course-date{
+	/* color: var(---gray-500); */
+	font-weight: 500;
+	font-size: 14px;
+}
+
 .card{
 	background-color: var(--white);
 	padding: 24px;
-	width: 300px;
-	height: max-content;
-	min-width: 320px;
-	border-radius: 12px;
+	max-width: 365px;
+	border-radius: 18px;
 	border: solid 1px ;
 	border-color: var(---gray-500);
-	/* max-width: 100%; */
 	box-sizing: border-box;
+	box-shadow: 8px 10px 0px 1px ;
 }
 
 .card-img{
@@ -32,13 +51,32 @@ body {
 	width: 100%;
 }
 
-.card section{
-	/* padding: 12px; */
+section h1:hover	{
+	color: var(--yellow);
+	cursor: pointer;
 }
 
-.end-img {
-	width: 35px;
-	padding: 10px;
+section p{
+	color: var(---gray-500);
+	font-weight: 500;
+}
+
+
+.card-footer {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.card-footer img{
+	height: 40px;
+}
+
+footer{
+	margin: 24px;
+	/* width: 100%; */
 }
 
 .attribution {
@@ -48,3 +86,11 @@ body {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+.attribution a:hover {
+	background-color: var(---gray-500);
+	color: var(--yellow);
+	text-decoration: underline;
+}
+
+
